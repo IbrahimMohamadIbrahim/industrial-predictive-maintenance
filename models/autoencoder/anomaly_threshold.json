@@ -1,0 +1,26 @@
+{
+  "model_name": "TabularAutoencoder",
+  "input_dim": 11,
+  "latent_dim": 8,
+  "optimal_threshold": 0.009850997477769852,
+  "p95_threshold": 0.003843336133286357,
+  "p99_threshold": 0.007015833631157875,
+  "metrics": {
+    "test_precision": 0.65,
+    "test_recall": 0.1912,
+    "test_f1": 0.2955,
+    "test_pr_auc": 0.3635,
+    "test_roc_auc": 0.8495
+  },
+  "feature_names": [
+    "Type",
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]",
+    "Temperature Difference [K]",
+    "Torque-Speed Interaction",
+    "Tool Wear-Torque Interaction"
+  ]
+}
