@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "mlp": {
+    "framework": "tensorflow",
+    "framework_version": "2.15.0",
+    "artifact": "mlp/model.keras",
+    "preprocessing_artifact": "mlp/preprocessing.joblib",
+    "feature_order": [
+      "Type",
+      "Air temperature [K]",
+      "Process temperature [K]",
+      "Rotational speed [rpm]",
+      "Torque [Nm]",
+      "Tool wear [min]"
+    ],
+    "decision_threshold": 0.5,
+    "metrics": {
+      "pr_auc": 0.85,
+      "recall": 0.88,
+      "precision": 0.80,
+      "f1": 0.84,
+      "false_negative_rate": 0.12
+    }
+  },
+  "autoencoder": {
+    "framework": "tensorflow",
+    "framework_version": "2.15.0",
+    "artifact": "autoencoder/model.keras",
+    "preprocessing_artifact": "autoencoder/preprocessing.joblib",
+    "feature_order": [
+      "Air temperature [K]",
+      "Process temperature [K]",
+      "Rotational speed [rpm]",
+      "Torque [Nm]",
+      "Tool wear [min]"
+    ],
+    "score_method": "mean_squared_reconstruction_error",
+    "anomaly_threshold": 0.05,
+    "metrics": {
+      "test_reconstruction_error": 0.02,
+      "anomaly_detection_metric": 0.91
+    }
+  }
+}

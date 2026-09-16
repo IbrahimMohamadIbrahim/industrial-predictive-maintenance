@@ -1,0 +1,32 @@
+sources:
+  - id: project-brief
+    file: 01_project_requirements.md
+    kind: local-project-brief-summary
+    source_path: ../../../project_desc.pdf
+    pages: "2-6"
+    retrieved_on: 2026-09-16
+    notes: "Summary for retrieval; retain the original PDF as the authoritative brief."
+
+  - id: uci-ai4i-dataset
+    file: 02_ai4i_dataset_reference.md
+    kind: primary-dataset-documentation-summary
+    canonical_url: https://archive.ics.uci.edu/dataset/601/ai4i%2B2020%2Bpredictive%2Bmaintenance%2Bdataset
+    doi: https://doi.org/10.24432/C5HS5C
+    license: CC-BY-4.0
+    retrieved_on: 2026-09-16
+    notes: "Curated summary. Cite the UCI dataset in reports and presentations."
+
+  - id: uci-ai4i-failure-modes
+    file: 03_ai4i_failure_modes.md
+    kind: primary-dataset-documentation-summary
+    canonical_url: https://archive.ics.uci.edu/dataset/601/ai4i%2B2020%2Bpredictive%2Bmaintenance%2Bdataset
+    license: CC-BY-4.0
+    retrieved_on: 2026-09-16
+    notes: "Definitions apply to the synthetic AI4I data generator only."
+
+  - id: project-demo-guidance
+    file: 04_demo_maintenance_guidance.md
+    kind: project-authored-demo-guidance
+    author: Industrial Predictive Maintenance project team
+    retrieved_on: 2026-09-16
+    notes: "Not a manufacturer manual or real operating procedure."
