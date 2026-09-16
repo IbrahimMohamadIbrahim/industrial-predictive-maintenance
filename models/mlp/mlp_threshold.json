@@ -1,0 +1,23 @@
+{
+  "model_name": "MLP (Wide (128, 128))",
+  "optimal_threshold": 0.8899999999999999,
+  "default_threshold": 0.5,
+  "metrics": {
+    "test_precision": 0.6104,
+    "test_recall": 0.6912,
+    "test_f1": 0.6483,
+    "test_pr_auc": 0.7275,
+    "test_roc_auc": 0.9753
+  },
+  "feature_names": [
+    "Type",
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]",
+    "Temperature Difference [K]",
+    "Torque-Speed Interaction",
+    "Tool Wear-Torque Interaction"
+  ]
+}
